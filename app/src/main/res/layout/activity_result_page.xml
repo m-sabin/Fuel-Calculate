@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/primary_900"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultPage">
+
+    <LinearLayout
+        android:id="@+id/bg_result"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:background="@drawable/bgresult"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="45sp"
+        android:layout_marginTop="70dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="R$ 55.78" />
+
+    <TextView
+        android:id="@+id/tv_title_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Preço"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_title_price"
+        tools:text="1.7" />
+
+    <TextView
+        android:id="@+id/tv_title_consum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Consumo"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_price" />
+
+    <TextView
+        android:id="@+id/tv_consum_valor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_title_consum"
+        tools:text="5.0" />
+
+    <TextView
+        android:id="@+id/tv_title_km"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Km"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_consum" />
+
+    <TextView
+        android:id="@+id/tv_km_valor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_title_km"
+        tools:text="150" />
+
+    <Button
+        android:id="@+id/btn_finish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Novo Cálculo"
+        android:layout_margin="16dp"
+        android:padding="16dp"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Veja o Resumo dos Dados Inseridos"
+        android:layout_marginTop="40dp"
+
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bg_result" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/primary_900"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConsumPage">
+
+    <LinearLayout
+        android:id="@+id/bg_custom"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:background="@drawable/custom_bg_padrao"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/img_consum"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:src="@drawable/img_consum" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btn_return"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/ic_arrow_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Consumo do Carro"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_margin="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_subtitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bg_custom" />
+
+    <TextView
+        android:id="@+id/tv_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Passo 2 de 3"
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"
+        android:textColor="@color/design_default_color_error"
+        app:layout_constraintStart_toStartOf="@+id/tv_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_consum_parent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        app:hintEnabled="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_subtitle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tie_consum"
+            android:hint="Ex: 5km/L"
+            android:textColorHint="@color/primary_900"
+            android:maxLength="4"
+            android:background="@drawable/bgeditextcostum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_consum"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:padding="16dp"
+        android:text="Próximo"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
