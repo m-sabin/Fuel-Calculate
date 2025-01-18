@@ -19,6 +19,16 @@ class ResultPage : AppCompatActivity() {
         binding = ActivityResultPageBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        val fuelprice = intent.getFloatExtra("FuelPrice", 0f)
+        val fuelconsum = intent.getFloatExtra("FuelConsum", 0f)
+        val fuelkm = intent.getFloatExtra("FuelKm", 0f)
+        val totalfuel = (fuelkm / fuelconsum) * fuelprice
+
+        binding.tvTotalFuel.text = "R$ ${"%.2f".format(totalfuel)}"
+        binding.tvPrice.text = "R$ ${"%.2f".format(fuelprice)}"
+        binding.tvConsumValor.text = "${"%.2f".format(fuelconsum)} km/l"
+        binding.tvKmValor.text = "${"%.2f".format(fuelkm)} km"
+
 
 
         binding.btnFinish.setOnClickListener {

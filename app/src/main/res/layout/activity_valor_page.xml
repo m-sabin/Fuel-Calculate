@@ -74,7 +74,8 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/tie_price"
             android:hint="Ex: 1.70"
-            android:textColorHint="@color/primary_900"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
             android:inputType="numberDecimal"
             android:maxLength="4"
             android:background="@drawable/bgeditextcostum"

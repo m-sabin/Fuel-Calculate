@@ -75,9 +75,11 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/tie_km"
-            android:hint="Ex: 15km"
-            android:textColorHint="@color/primary_900"
+            android:hint="Ex: 15km (somente números)"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
             android:maxLength="4"
+            android:inputType="numberDecimal"
             android:background="@drawable/bgeditextcostum"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />

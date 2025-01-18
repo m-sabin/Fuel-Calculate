@@ -21,7 +21,7 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/tv_total"
+        android:id="@+id/tv_total_fuel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
@@ -38,7 +38,7 @@
         android:id="@+id/tv_title_price"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Preço"
+        android:text="Valor/L"
         android:textColor="@color/white"
         android:textStyle="bold"
         android:layout_marginTop="80dp"
@@ -61,7 +61,7 @@
         android:id="@+id/tv_title_consum"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Consumo"
+        android:text="Consumo km/l"
         android:textColor="@color/white"
         android:textStyle="bold"
         android:layout_marginTop="50dp"
@@ -84,7 +84,7 @@
         android:id="@+id/tv_title_km"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Km"
+        android:text="Kilometragem"
         android:textColor="@color/white"
         android:textStyle="bold"
         android:layout_marginTop="50dp"
